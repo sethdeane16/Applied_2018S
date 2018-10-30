@@ -1,0 +1,58 @@
+Seth Deane homework 4 analysis.txt
+
+During the testing of this program, many debugging strategies were used.
+Print debugging was helpful for identifying what line was causing errors in
+the code. For finding and preventing memory leaks, valgrind was useful.
+Finally, gdb was helpful in finding what values were at certain points of
+the code execution. Debugging took the majority of the time for this
+homework.
+
+The search implemented for both the linked list and the dynamic array was 
+naive. It loops through each element in the data structure comparing it to 
+the word being searched for. If the words match, that data pointer is
+returned. A naive implementation was used to extend the differences between 
+the data structures.
+
+All values collected are presented in seconds. Data was collected by running
+the file "TestTiming.c" with the datafile "us-eng-words.txt". The data to the
+left of the arrow is the total time taken to run the test, the information
+to the right of the arrow is the time taken per repetition.
+
+Data Input with 10000000 repetitions:
+=========================================
+|reps| Linked List     | Dynamic Array  |
+|=======================================|
+| 1  | 4.92 -> 4.92E-7 | 4.81 -> 4.81E-7|
+| 2  | 5.09 -> 5.09E-7 | 5.03 -> 5.03E-7|
+| 3  | 4.94 -> 4.94E-7 | 4.77 -> 4.77E-7|
+| 4  | 5.24 -> 5.24E-7 | 4.86 -> 4.86E-7|
+| 5  | 4.93 -> 4.93E-7 | 4.73 -> 4.73E-7|
+|---------------------------------------|
+|avg | 5.02 -> 5.02E-7 | 4.84 -> 4.84E-7|
+=========================================
+
+Search with 1000 repetitions:
+=========================================
+|rep | Linked List     | Dynamic Array  |
+|=======================================|
+| 1  | 7.53 -> 7.53E-3 | 6.09 -> 6.09E-3|
+| 2  | 7.29 -> 7.29E-3 | 5.84 -> 5.84E-3|
+| 3  | 6.99 -> 6.99E-3 | 6.62 -> 6.62E-3|
+| 4  | 6.74 -> 6.74E-3 | 6.09 -> 6.09E-3|
+| 5  | 7.39 -> 7.39E-3 | 6.77 -> 6.77E-3|
+|---------------------------------------|
+|avg | 7.18 -> 7.18E-3 | 6.28 -> 6.28E-3|
+=========================================
+
+The data collected from these timing results indicates that in general, the 
+DynamicArray implementation is faster. For reading, an average of .2 seconds
+is saved. Keep in mind, the reading to the array is heavily impacted by the
+growth strategy used to grow the dynamic array. With a growth of 1000, the
+reading appears to be faster for the dynamic array. With the search
+implementation used, the dynamic array also appears to be faster, with an
+average gain of .9 seconds. This increase is likely due to how elements are
+accessed in the dynamic array vs the linked list. The linked list requires
+that the pointer be updated after each iteration while the dynamic array
+only increments a counter which is used to access an array. This is likely
+why dynamic arrays take less time generally than linked lists.
+

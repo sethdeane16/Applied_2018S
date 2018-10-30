@@ -1,0 +1,85 @@
+Seth Deane
+Hw5 analysis.txt
+
+approach to optimization:
+    The -O3 optimization flag was used to compile this project. After testing
+the bisection formula with several iterations, it was found that -O3 gave
+the best timing results for this assignment. It should be noted that the
+second best optimization was given by -O0 which was on average .2 second
+behind when executing 5000000 iterations. 
+    The time taken to execute each algorithm varies wildly on the bounds
+given. For the tests given the timing for each algorithm is given below at
+the -O3 optimization level. Data was collected for 50000 iterations. The info
+to the left of the arrow is the total time taken and the info to the right of
+the arrow is the time per iteration.
+
+                            bisection (-2.5, 2.5)
+                            1.56 -> 4.00E-5
+                            1.61 -> 3.22E-5
+                            1.55 -> 3.10E-5
+                            
+                            newton (-1.5)
+                            0.60 -> 1.20E-5
+                            0.60 -> 1.20E-5
+                            0.62 -> 1.24E-5
+                            
+                            newton (1.5)
+                            0.30 -> 6.00E-6
+                            0.30 -> 6.00E-6
+                            0.30 -> 6.00E-6
+                            
+                            secant (-1.5, -1.499999)
+                            0.68 -> 1.36E-5
+                            0.71 -> 1.42E-5
+                            0.71 -> 1.42E-5
+                            
+                            secant (1.5, 1.5000001)
+                            0.44 -> 8.80E-6
+                            0.44 -> 8.80E-6
+                            0.45 -> 9.00E-6
+
+    As mentioned previously, the starting values of the guesses have an
+impact on timing performance. Between the two newton tests, the 1.5 starting
+value was faster because the derivative gave a point closer to a root than 
+-1.5 did. A similar story is true for the secant algorithm.
+
+
+secant method offset:
+    When testing the secant method, the points -1.5 and 1.5 were used as the
+initial points. The second point was -1.5 + tolerance and 1.5 + tolerance.
+Because there is such a small difference between these two points from adding
+the tolerance to the initial value, the variability in the slope between the
+two points is much closer to the actual slope of the line. 
+
+
+Qn:
+    Qn was calculated based on the amount of precision needed for the decimal
+places. A value of 12 was chosen because this will be larger than the
+smallest tolerance. This still leaves us plenty of values to be used in the 
+positive magnitude numerical space. The percentage off of the actual value
+as calculated with floats is .3 percent which is perfectly acceptable for 
+most engineering purposes.
+    The Qn value when varried changes the precision of the Qn calculated
+value. For example, when the Qn value was increased to 22, there was no
+difference for the root calculated by the algorithm. However, it did take
+longer since more iterations were needed. When the Qn value was decreased to
+5, the algorithm took significantly less time, but was also further from the
+answer collected by the floating point calculations. This is because less
+points of precision were preserved between iterations.
+
+
+Timing intTest:
+    intTest allowed for timing information to be obtained. Float arithmetic
+takes longer than integer arithmetic. This can be seen by the data collected 
+in the following table with 5000000 iterations as shown in seconds. The info
+to the left of the arrow is the total time taken and the info to the right
+of the arrow is the time per iteration.
+
+                     int             | float
+                     ----------------|----------------
+                     0.61 -> 1.22E-7 | 2.38 -> 4.76E-7
+                     0.62 -> 1.24E-7 | 1.68 -> 3.36E-7
+                     0.61 -> 1.22E-7 | 1.68 -> 3.36E-7
+                     0.61 -> 1.22E-7 | 1.69 -> 3.38E-7
+                     0.61 -> 1.22E-7 | 1.68 -> 3.36E-7
+

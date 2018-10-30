@@ -1,0 +1,10 @@
+Elapsed CPU time (lldata) = 4.99 sec. 
+Elapsed CPU Time per Iteration (lldata, 10000000) =  4.99e-07 sec.
+Elapsed CPU time (llsearch) = 6.96 sec. 
+Elapsed CPU Time per Iteration (llsearch, 1000) =  6.96e-03 sec.
+Elapsed CPU time (dadata) = 4.85 sec. 
+Elapsed CPU Time per Iteration (dadata, 10000000) =  4.85e-07 sec.
+Elapsed CPU time (dasearch) = 5.91 sec. 
+Elapsed CPU Time per Iteration (dasearch, 1000) =  5.91e-03 sec.
+space was found on line 206570 
+space was found on line 206570 

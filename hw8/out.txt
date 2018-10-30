@@ -1,0 +1,5 @@
+Max/Min/Ave/Mid Percent Error = 27.71% / 2.07% / -18.60% / 19.25% 
+Max/Min/Ave count error    = 468 / 22 / -324
+Norm of residuals error  = 21833.49
+R squared error          = 0.91867835
+Pearson's Correlation    = 0.99698093

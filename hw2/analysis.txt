@@ -1,0 +1,21 @@
+Question 2:
+Running the debug command "gdb -args debugTst divide" opens gdb. After
+running (by pressing r then enter) the program crashes on line 24. Rerunning
+gdb, the first command done is "b 24" which creates a breakpoint before line
+24. Running the program will then stop at the breakpoint. At this point,
+running "print number" returns that number which equals 100. 
+
+Question 3:
+When running the valgrind command on debugTst with argument "memory", 2048
+bytes are definitely lost in 1 block. When running the valgrind command on
+debugTst with argument "good" there were no memory leaks possible. The amount
+of memory used and freed during the program was 2096 bytes.
+
+Question 4-5:
+A Dynamic Array program was written. It will expand if the amount of data
+entered in the array becomes larger than the array. This dynamic memory
+allocation was done using malloc, realloc and free commands. When reading in 
+the file to the array, each line must be less than 255 bytes in length,
+otherwise an error will be returned. At the end of the program, if no errors
+occurred then an error code of 0 will be returned.
+

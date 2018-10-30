@@ -1,0 +1,141 @@
+hw3  :
+section              size      addr
+.interp                28   4194816
+.note.ABI-tag          32   4194844
+.note.gnu.build-id     36   4194876
+.gnu.hash              36   4194912
+.dynsym               312   4194952
+.dynstr               132   4195264
+.gnu.version           26   4195396
+.gnu.version_r         48   4195424
+.rela.dyn              48   4195472
+.rela.plt             240   4195520
+.init                  24   4195760
+.plt                  176   4195784
+.text                1320   4195968
+.fini                  14   4197288
+.rodata               221   4197304
+.eh_frame_hdr          52   4197528
+.eh_frame             220   4197584
+.ctors                 16   6294960
+.dtors                 16   6294976
+.jcr                    8   6294992
+.dynamic              400   6295000
+.got                    8   6295400
+.got.plt              104   6295408
+.data                   4   6295512
+.bss                   24   6295520
+.comment               45         0
+.debug_aranges         48         0
+.debug_pubnames        66         0
+.debug_info          1319         0
+.debug_abbrev         352         0
+.debug_line           285         0
+.debug_str            693         0
+.debug_loc           1201         0
+.debug_pubtypes       121         0
+Total                7675
+
+
+hw3t_c  :
+section              size      addr
+.interp                28   4194816
+.note.ABI-tag          32   4194844
+.note.gnu.build-id     36   4194876
+.gnu.hash              36   4194912
+.dynsym               360   4194952
+.dynstr               145   4195312
+.gnu.version           30   4195458
+.gnu.version_r         48   4195488
+.rela.dyn              48   4195536
+.rela.plt             288   4195584
+.init                  24   4195872
+.plt                  208   4195896
+.text                2936   4196112
+.fini                  14   4199048
+.rodata               656   4199064
+.eh_frame_hdr          52   4199720
+.eh_frame             196   4199776
+.ctors                 16   6297128
+.dtors                 16   6297144
+.jcr                    8   6297160
+.dynamic              400   6297168
+.got                    8   6297568
+.got.plt              120   6297576
+.data                   4   6297696
+.bss                   24   6297704
+.comment               45         0
+.debug_aranges         48         0
+.debug_pubnames        66         0
+.debug_info          1447         0
+.debug_abbrev         307         0
+.debug_line           355         0
+.debug_str            826         0
+.debug_pubtypes       165         0
+Total                8992
+
+
+hw3cpp  :
+section               size      addr
+.interp                 28   4194816
+.note.ABI-tag           32   4194844
+.note.gnu.build-id      36   4194876
+.gnu.hash               52   4194912
+.dynsym                600   4194968
+.dynstr                794   4195568
+.gnu.version            50   4196362
+.gnu.version_r         112   4196416
+.rela.dyn               48   4196528
+.rela.plt              504   4196576
+.init                   24   4197080
+.plt                   352   4197104
+.text                 4200   4197456
+.fini                   14   4201656
+.rodata                120   4201672
+.eh_frame_hdr          476   4201792
+.eh_frame             2020   4202272
+.gcc_except_table       69   4204292
+.ctors                  24   6301520
+.dtors                  16   6301544
+.jcr                     8   6301560
+.dynamic               448   6301568
+.got                     8   6302016
+.got.plt               192   6302024
+.data                    4   6302216
+.bss                   296   6302240
+.comment                45         0
+Total                10572
+
+
+hw3t_cpp  :
+section               size      addr
+.interp                 28   4194816
+.note.ABI-tag           32   4194844
+.note.gnu.build-id      36   4194876
+.gnu.hash               56   4194912
+.dynsym                696   4194968
+.dynstr                822   4195664
+.gnu.version            58   4196486
+.gnu.version_r         112   4196544
+.rela.dyn               72   4196656
+.rela.plt              576   4196728
+.init                   24   4197304
+.plt                   400   4197328
+.text                 5288   4197728
+.fini                   14   4203016
+.rodata                552   4203032
+.eh_frame_hdr          476   4203584
+.eh_frame             2020   4204064
+.gcc_except_table       72   4206084
+.ctors                  24   6303744
+.dtors                  16   6303768
+.jcr                     8   6303784
+.dynamic               448   6303792
+.got                     8   6304240
+.got.plt               216   6304248
+.data                    4   6304464
+.bss                   304   6304480
+.comment                45         0
+Total                12407
+
+

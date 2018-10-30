@@ -1,0 +1,85 @@
+All values collected are presented in seconds. Data was collected from
+data.txt. There were no improvements made to this code. The data to the left
+of the arrow is the total time taken to run the test, the information to the
+right of the arrow is the time taken per repetition.
+
+hw3t.c
+====================================
+SPEED:
+-------------
+Data Input with 1000 repetitions:
+    1) 75.44 -> 7.54E-2
+    2) 78.79 -> 7.88E-2
+    3) 74.75 -> 7.47E-2
+    4) 75.94 -> 7.59E-2
+    5) 74.68 -> 7.47E-2
+
+Calculations with 2.5E6 repetitions:
+    1) 80.29 -> 3.21E-5
+    2) 80.63 -> 3.23E-5
+    3) 80.28 -> 3.21E-5
+    4) 80.40 -> 3.22E-5
+    5) 80.45 -> 3.22E-5
+
+SIZE:
+-------------
+The size of hw3.c (without timing) is 6911 bytes. The program created by
+this source code is 13685 bytes. These results were obtained by using the
+ls -l command. The size -A command was then run. The results of the command
+size -A hw3 were...
+.text = 1320
+.data = 4
+.bss  = 24
+
+The size of hw3t.c (with timing) is 7997 bytes. The program created by this
+source code is 14989 bytes. These results were obtained by using the
+ls -l command. The size -A command was then run. The results of the command
+siza -A hw3t were...
+.text = 2936
+.data = 4
+.bss  = 24
+
+Adding timing information increases the amount of code written. This explains
+the jump in filesize from the timerless version to the timing version.
+
+
+
+hw3t.cpp
+====================================
+SPEED:
+-------------
+Data Input with 1000 repetitions:
+    1) 6.56 -> 6.56E-3
+    2) 6.58 -> 6.58E-3
+    3) 6.74 -> 6.74E-3
+    4) 6.58 -> 6.58E-3
+    5) 6.81 -> 6.81E-3
+
+Calculations with 1E7 repetitions:
+    1) 0.06 -> 6E-9
+    2) 0.06 -> 6E-9
+    3) 0.07 -> 7E-9
+    4) 0.07 -> 7E-9
+    5) 0.07 -> 7E-9
+
+SIZE:
+-------------
+The size of hw3cpp.cpp (without timing) is 7537 bytes. The program created
+by this source code is 21304 bytes. These results were obtained by using the
+ls -l command. The size -A command was then run. The results of the command
+siza -A hw3t were...
+.text = 4200
+.data = 4
+.bss  = 296
+
+The size of hw3t.cpp (with timing) is 8426 bytes. The program created
+by this source code is 23726 bytes. These results were obtained by using the
+ls -l command. The size -A command was then run. The results of the command
+siza -A hw3t were...
+.text = 5288
+.data = 4
+.bss  = 304
+
+Adding timing information increases the amount of code written. This explains
+the jump in filesize from the timerless version to the timing version.
+

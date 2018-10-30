@@ -1,0 +1,12 @@
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+eval `ssh-agent -s`
+ssh-add
+
+export PATH=$PATH:~/scripts
+export NS3_PATH=/home/sxd4738/Harris/WAR/ns-3-allinone
+export GDFONTPATH=/usr/share/fonts/dejavu
+export GNUPLOT_DEFAULT_DDFONT="DejaVuSans.ttf"

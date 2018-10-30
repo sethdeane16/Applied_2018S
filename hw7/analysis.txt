@@ -1,0 +1,33 @@
+Development Updates:
+A row swapping helper function was written for easier row swapping. This 
+function also updates the permutation vector. Functions were added to find
+the upper and lower triangular forms for easy forward and backward
+substitution.
+
+ge1.txt-ge4.txt result analysis:
+ge1.txt results is a solvable matrix. This file did not have any parsing 
+challenges.
+ge2.txt results is a solvable matrix. This file did not have any parsing
+challenges.
+ge3.txt results in a non-solvable matrix. This file did have some parsing
+challenges with whitespace.
+ge4.txt results in a non-solvable matrix. This file did have some parsing
+challenges with whitespace, tabs and newlines.
+
+Timings:
+Itt | my solutions | GSL solution
+----|--------------|-------------
+1   | 8.45 sec     | 7.74 sec
+2   | 8.50 sec     | 7.98 sec
+3   | 8.66 sec     | 7.95 sec
+4   | 8.48 sec     | 7.92 sec
+5   | 8.48 sec     | 7.82 sec
+---------------------------------
+avg | 8.54 sec     | 7.88 sec
+
+The performance metric as calculated by dividing the time taken for my
+solution by the time taken for the GSL solution is 1.0837. This timing does
+include the time taken to read in the matrix. Reading the file was done the
+same for each matrix which may have increased the times taken to calculate
+significantly.
+

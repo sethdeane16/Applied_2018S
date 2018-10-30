@@ -1,0 +1,10 @@
+Part D.
+All three runs produced expected output. When using the roots 2, 2392.2, and
+-766267.2, the program outputs that the quadratic equation has real roots at
+-1458.745850 and 262.645874. When using the roots 1, -1, and 1, the program
+outputs that the quadratic equation has complex roots at
+0.500000 +/- j0.866025. When using the roots 0, 1, and -10, the program
+outputs that the equation has no real roots. This is because these roots do
+not create a valid quadratic equation. 
+
+

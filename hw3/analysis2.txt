@@ -1,0 +1,52 @@
+NOTE: values are in seconds
+NOTE: data is collected from running data.txt
+NOTE: MODIFIED CODE FOR INCREASED SPEED
+FORMAT: total time -> time per repetition.
+
+All values collected are presented in seconds. Data was collected from
+data.txt. There were some improvements made or attempted in the code. These
+improvements are detailed below...
+
+Improvements made to input:
+  - Increased the size of the malloc from 1 to 200000. This allows for less
+    malloc commands which are very costly.
+Improvements made to calculations:
+  - Tried unrolling the loop, but that appeared to have a negative impact.
+  - Tried converting from double to int but this created incorrect results.
+    and still took as long as the double version.
+
+The data to the left of the arrow is the total time taken to run the test,
+the information to the right of the arrow is the time taken per repetition.
+
+
+hw3opt.c
+===================================
+SPEED:
+-----------
+Data Input with 1000 repetitions:
+    1) 4.36 -> 4.36E-3
+    2) 4.34 -> 4.34E-3
+    3) 4.42 -> 4.42E-3
+    4) 4.38 -> 4.38E-3
+    5) 4.29 -> 4.29E-3
+
+Calculations with 2.5E6 repetitions:
+    1) 80.56 -> 3.23E-5
+    2) 80.47 -> 3.24E-5 
+    3) 80.54 -> 3.24E-5 
+    4) 80.62 -> 3.23E-5
+    5) 80.51 -> 3.24E-5
+
+SIZE:
+-----------
+The size of hw3opt.c (with timing) is 8006 bytes. The program created by this
+source code is 14999 bytes. These results were obtained using the ls -l
+command. The size -A command was then run. The results of the command
+size -A hw3opt were...
+.text = 2936
+.data = 4
+.bss  = 24
+
+
+From this analysis data, by optimizing the c program, it was made faster at
+the expense of code size.

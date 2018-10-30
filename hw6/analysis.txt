@@ -1,0 +1,27 @@
+Seth Deane analysis.txt
+
+General program format:
+This homework involved the solving of different polynomials using laguerres 
+algorithm. If a polynomial has 1 root, it is solved and printed. If a
+polynomial has 2 roots, they are solved with the quadratic function. If the
+polynomial has any number of roots above 2, they are solved for using
+laguerres and the polynomial is deflated until there is a quadratic
+remaining. At this point, the quadratic equation is used to solve the for the
+ remaining roots.
+
+How derivatives are calculated:
+Derivatives are calculated by subtracting and dividing the power of each term
+ sequentially.
+
+Reading in files:
+Data is read in line by line from a file containing a space separated list of
+numbers. These numbers are ordered from high to low of the coefficients to a
+polynomial. Each line is read in then parsed and passed to the function that
+will calculate the roots of the function.
+
+Troubles and Learning experiences:
+This lab presented a lot of memory management trouble for me. Returning a
+reference to a pointer could not be done by using the & modifier. Instead, 
+you had to malloc space for it then return that and make sure to free it 
+outside of the function. I gained lots of knowledge about how to debug memory
+issues. Valgrind is great, and always make sure to close the file. 

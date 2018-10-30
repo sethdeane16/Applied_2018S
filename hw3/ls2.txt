@@ -1,0 +1,2 @@
+-rwxrwx---. 1 sxd4738 domain users 14999 Mar  2 11:10 hw3opt
+-rwxrwx---. 1 sxd4738 domain users  8006 Mar  1 22:54 hw3opt.c

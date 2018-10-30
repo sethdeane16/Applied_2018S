@@ -1,0 +1,20 @@
+First 6 words in linked list:
+dermatitis 
+toxins 
+wisted 
+benedictions 
+Tera 
+petrochemistry's 
+Last 6 words in linked list:
+besotting 
+pressurize 
+intercohort 
+Sidman's 
+Pict's 
+harken 
+Number of words: 206590 
+Remove from front of list, new front is: toxins 
+Removed value is: dermatitis 
+Remove from back of list, new back is: pressurize 
+Removed value is: besotting 
+Destroying the linked list

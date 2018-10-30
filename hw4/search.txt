@@ -1,0 +1,2 @@
+space was found on line 206570 
+Destroying the linked list

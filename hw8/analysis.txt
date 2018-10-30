@@ -1,0 +1,33 @@
+To choose the appropriate correction function, hw8 was run with different
+order equations. The most closely correlated norm of residuals, R**2
+determination coefficient and pearson correlation was found in the second
+order equation. It was observed that with order 8 polynomials, ge produced
+values that were further from the accepted value and norm returned nan for
+all values of the coefficients of the correction function.
+
+Apart from the 8th order polynomial Norm and ge options gave the same values
+for the correction polynomial. Some of these data analysis values are shown
+below.
+
+order 2
+-------
+norm = 3481.706
+R**2 = .912121
+pear = .998917
+
+order 3
+-------
+norm = 20949.49
+R**2 = .7785
+pear = .990400
+
+.
+.
+.
+
+order 8 with norm
+-------
+norm = 15919.79
+R**2 = .81715
+pear = .994242
+
